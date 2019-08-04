@@ -1,0 +1,138 @@
+[bar/i3wmthemer_bar]
+width = 100%
+height = 27
+radius = 0
+fixed-center = false
+
+background = #2f2f38
+foreground = #b0c4bb
+
+line-size = 3
+line-color =
+
+border-size = 0
+border-color =
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = "Source Code Pro Semibold:size=10;1"
+font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
+font-2 = "Font Awesome 5 Brands:size=10;1"
+
+modules-left = text-label i3
+modules-center = title
+modules-right = cpu memory date powermenu
+
+tray-position =
+;tray-padding =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/text-label]
+type = custom/text
+content = "David's Arch"
+
+[module/title]
+type = internal/xwindow
+
+[module/memory]
+type = internal/memory
+interval = 3
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 2
+label-mode-foreground = #34343e
+label-mode-background = #2f2f38
+
+label-focused = %index%
+label-focused-background = #688486
+label-focused-foreground = #2f2f38
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-background = #81a2be
+label-unfocused-foreground = #2f2f38
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-background = #81a2be
+label-visible-foreground = #2f2f38
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-background = #BA2922
+label-urgent-padding = 2
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-foreground = #2f2f38
+format-background = #81a2be
+format-padding = 2
+
+label = %date% %time%
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = #81a2be
+label-close =  cancel
+label-close-foreground = #81a2be
+label-separator = |
+label-separator-foreground = #81a2be
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+menu-0-2 = log off
+menu-0-2-exec = menu-open-3
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = reboot
+
+menu-2-0 = power off
+menu-2-0-exec = poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+menu-3-0 = log off
+menu-3-0-exec = pkill -KILL -u $USER
+menu-3-1 = cancel
+menu-3-1-exec = menu-open-0
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
