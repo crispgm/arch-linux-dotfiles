@@ -71,3 +71,10 @@ alias screenshot="import -window root ~/screenshot-$(date +%s).png"
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
+
+PATH="/home/david/perl5/bin${PATH:+:${PATH}}"; export PATH;
+export PATH="/home/david/.gem/ruby/2.6.0/bin:$PATH"
+PERL5LIB="/home/david/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/david/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/david/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/david/perl5"; export PERL_MM_OPT;
