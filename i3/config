@@ -215,6 +215,7 @@ exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id /$HOME/.config/polybar/i3wmthemer_bar_launch.sh
+exec_always --no-startup-id ibus-daemon -drx
 
 # Theme colors
 client.focused #b0c4bb #2f2f38 #b0c4bb #81a2be #81a2be
