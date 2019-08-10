@@ -6,13 +6,19 @@ Setup and dofiles for Arch Linux. _RICE is awesome!_
 
 ## Components
 
-* bash
-* zsh
-* i3
-* nitrogen
-* rofi
-* polybar
+* i3-gaps
+* Alacritty
+* Nitrogen
+* Rofi
+* Polybar
 * neovim (actually the same as macOS)
+
+## Themes
+
+* [i3wm-themer](https://github.com/unix121/i3wm-themer)
+* [Nordic](https://github.com/EliverLara/Nordic)
+* Fira Code
+* Source Code Pro
 
 ## Screenshot
 
