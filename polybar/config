@@ -3,6 +3,7 @@ width = 100%
 height = 27
 radius = 0
 fixed-center = false
+bottom = false
 
 background = #2f2f38
 foreground = #b0c4bb
@@ -20,11 +21,11 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = "Source Code Pro Semibold:size=10;1"
-font-1 = "Siji:style=Regular:size=10;1"
+font-1 = "Icons:style=Regular:size=10;1"
 font-2 = "Font Awesome 5 Free:style=Solid:size=10;1"
 
 modules-left = text-label i3
-modules-center = title
+modules-center =
 modules-right = alsa date powermenu
 
 tray-position =
@@ -45,8 +46,8 @@ type = internal/alsa
 master-soundcard = default
 speaker-soundcard = default
 headphone-soundcard = default
-master-mixer = Front
-speaker-mixer = Front
+master-mixer = Master
+speaker-mixer = Headphone
 headphone-mixer = Headphone
 headphone-id = 35
 mapped = true
