@@ -26,13 +26,18 @@ font-2 = "Font Awesome 5 Free:style=Solid:size=10;1"
 
 modules-left = text-label i3
 modules-center =
-modules-right = alsa date powermenu
+modules-right = ibus-engine alsa date
 
 tray-position =
 ;tray-padding =
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/ibus-engine]
+type = custom/script
+exec = ~/.config/polybar/ibus-engine.sh
+interval = 1
 
 [module/text-label]
 type = custom/text
@@ -52,9 +57,10 @@ headphone-mixer = Headphone
 headphone-id = 35
 mapped = true
 interval = 5
-format-volume = <ramp-volume> <label-volume>
+;format-volume = <ramp-volume> <label-volume>
+format-volume = <label-volume>
 label-volume = %percentage%%
-label-muted = 🔇 muted
+label-muted = muted
 label-muted-foreground = #66
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
