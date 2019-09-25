@@ -1,0 +1,11 @@
+/* Rofi configuration */
+
+configuration {
+    modi:                   "run,ssh,window";
+    matching:               "fuzzy";
+    theme:                  ".config/rofi/theme.rasi";
+    width:                  480;
+    lines:                  6;
+    columns:                1;
+    separator-style:        "solid";
+}
