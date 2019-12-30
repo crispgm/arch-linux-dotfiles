@@ -1,35 +1,44 @@
+[colors]
+nord0 = #2E3440
+nord1 = #3B4252
+nord2 = #434C5E
+nord3 = #4C566A
+nord4 = #D8DEE9
+nord5 = #E5E9F0
+nord6 = #ECEFF4
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+nord10 = #5E81AC
+nord11 = #BF616A
+nord12 = #D08770
+nord13 = #EBCB8B
+nord14 = #A3BE8C
+nord15 = #B48EAD
+
 [bar/i3wmthemer_bar]
 width = 100%
-height = 27
-radius = 0
-fixed-center = false
-bottom = false
+height = 26
+radius = 2
+bottom = true
 
-background = #2f2f38
-foreground = #b0c4bb
+background = ${colors.nord1}
+foreground = ${colors.nord6}
 
-line-size = 3
-line-color =
+border-left-size = 360
+border-right-size = 360
+border-bottom-size = 8
 
-border-size = 0
-border-color =
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
+module-margin-left = 0
+module-margin-right = 1
 
 font-0 = "Source Code Pro Semibold:size=10;1"
 font-1 = "Icons:style=Regular:size=10;1"
 font-2 = "Font Awesome 5 Free:style=Solid:size=10;1"
 
-modules-left = text-label i3
+modules-left = i3 xwindow
 modules-center =
 modules-right = ibus-engine alsa date
-
-tray-position =
-;tray-padding =
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -38,13 +47,23 @@ cursor-scroll = ns-resize
 type = custom/script
 exec = ~/.config/polybar/ibus-engine.sh
 interval = 1
+format-foreground = ${colors.nord2}
+format-background = ${colors.nord13}
+format-padding = 1
 
 [module/text-label]
-type = custom/text
+type =custom/text
 content = "David's Arch"
 
-[module/title]
+[module/xwindow]
 type = internal/xwindow
+
+format-foreground = ${colors.nord6}
+format-background = ${colors.nord1}
+format-padding = 1
+
+label = %{F#8fbcbb}%{F-} %title%
+label-maxlen = 60
 
 [module/alsa]
 type = internal/alsa
@@ -57,7 +76,8 @@ headphone-mixer = Headphone
 headphone-id = 35
 mapped = true
 interval = 5
-;format-volume = <ramp-volume> <label-volume>
+format-foreground = ${colors.nord13}
+format-padding = 1
 format-volume = <label-volume>
 label-volume = %percentage%%
 label-muted = muted
