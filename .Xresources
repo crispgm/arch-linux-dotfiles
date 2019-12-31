@@ -1,49 +1,62 @@
-*background: #2f2f38
-*foreground: #b0c4bb
-*cursorColor: #b0c4bb
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
 
-*color0: #34343e
-*color8: #b0c4bb
-*color1: #9aafaa
-*color9: #9aafaa
-*color2: #759496
-*color10: #759496
-*color3: #93b3b0
-*color11: #93b3b0
-*color4: #688486
-*color12: #81a2be
-*color5: #668ca1
-*color13: #668ca1
-*color6: #759496
-*color14: #759496
-*color7: #b0c4bb
-*color15:                         #E8E8E8
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
 
-URxvt.font: xft:Source Code Pro:size=10.5
-URxvt.depth:                      32
-URxvt*scrollBar:                  false
-URxvt*mouseWheelScrollPage:       false
-URxvt*cursorBlink:                true
-URxvt*saveLines:                  5000
-URxvt*internalBorder: 5
-URxvt*geometry: 70x19
-URxvt.inputMethod: ibus
-URxvt.preeditType: OverTheSpot
-URxvt.transparent: true
-URxvt.shading: 20
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-rofi.color-enabled: true
-rofi.color-window: #34343e, #759496, #759496
-rofi.color-normal: #34343e, #b0c4bb, #759496, #b0c4bb, #78824B
-rofi.color-active: #34343e, #b0c4bb, #759496, #b0c4bb, #78824B
-rofi.color-urgent: #34343e, #b0c4bb, #759496, #b0c4bb, #78824B
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
+
+rofi.color-window: #272827, #13bf9d, #13bf9d
+rofi.color-normal: #272827, #657b83, #272827, #272827, #13bf9d
+rofi.color-active: #272827, #657b83, #272827, #272827, #13bf9d
+rofi.color-urgent: #272827, #657b83, #272827, #272827, #13bf9d
 
 rofi.separator-style: solid
 rofi.sidebar-mode: false
-rofi.lines: 8
+rofi.lines: 5
 rofi.font: Source Code Pro Semibold 10.5
 rofi.bw: 1
-rofi.columns: 1
+rofi.columns: 2
 rofi.padding: 5
 rofi.fixed-num-lines: true
 rofi.hide-scrollbar: true
