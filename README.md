@@ -16,7 +16,7 @@ Setup and dofiles for Arch Linux. _RICE is awesome!_
 ## Themes
 
 * [i3wm-themer](https://github.com/unix121/i3wm-themer)
-* [Nordic](https://github.com/EliverLara/Nordic)
+* [Nord](https://nordtheme.com)
 * Fira Code
 * Source Code Pro
 
