@@ -227,7 +227,7 @@ client.placeholder #b0c4bb #2f2f38 #b0c4bb #688486 #688486
 client.background #2f2f38
 
 # Gaps
-gaps inner 10
+gaps inner 16
 gaps outer -4
 
 smart_gaps inverse_outer
